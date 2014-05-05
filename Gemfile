@@ -98,6 +98,13 @@ gem 'settingslogic'
 # Cron Manage
 gem 'whenever', require: false
 
+# User Authorization
+gem 'devise'
+gem 'cancan'
+
+# form helper
+gem 'enum_help'
+
 group :development do
   # Converter erb => haml
   gem 'erb2haml'

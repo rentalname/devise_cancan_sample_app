@@ -34,12 +34,14 @@ GEM
     anbt-sql-formatter (0.0.2)
     arel (5.0.1.20140414130214)
     awesome_print (1.2.0)
+    bcrypt (3.1.7)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (2.7.0)
       columnize (~> 0.3)
       debugger-linecache (~> 1.2)
+    cancan (1.6.10)
     capistrano (3.2.1)
       i18n
       rake (>= 10.0.0)
@@ -83,8 +85,15 @@ GEM
     database_rewinder (0.0.3)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
+    devise (3.2.4)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     dotenv (0.7.0)
+    enum_help (0.0.6)
     erb2haml (0.1.5)
       html2haml
     erubis (2.7.0)
@@ -177,6 +186,7 @@ GEM
     nio4r (1.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    orm_adapter (0.5.0)
     polyglot (0.3.4)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -311,6 +321,8 @@ GEM
       rack
       raindrops (~> 0.7)
     vcr (2.9.0)
+    warden (1.2.3)
+      rack (>= 1.0)
     webmock (1.17.4)
       addressable (>= 2.2.7)
       crack (>= 0.3.2)
@@ -326,6 +338,7 @@ PLATFORMS
 DEPENDENCIES
   airbrake
   awesome_print
+  cancan
   capistrano (~> 3.2.1)
   capistrano-bundler
   capistrano-rails
@@ -334,6 +347,8 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   database_rewinder
+  devise
+  enum_help
   erb2haml
   factory_girl_rails
   figaro
